@@ -1,0 +1,38 @@
+{
+  "conservative": {
+    "params": {
+      "occ_thr": 3,
+      "edge_thr": 4,
+      "weight_thr": 0.5,
+      "description": "保守策略 - 严格筛选，确保连接质量"
+    },
+    "network_stats": null,
+    "edge_stats": null,
+    "performance": null,
+    "status": "failed: No module named 'torch'"
+  },
+  "moderate": {
+    "params": {
+      "occ_thr": 2,
+      "edge_thr": 3,
+      "weight_thr": 0.4,
+      "description": "中等策略 - 平衡网络大小和连接质量"
+    },
+    "network_stats": null,
+    "edge_stats": null,
+    "performance": null,
+    "status": "failed: No module named 'torch'"
+  },
+  "relaxed": {
+    "params": {
+      "occ_thr": 2,
+      "edge_thr": 3,
+      "weight_thr": 0.3,
+      "description": "宽松策略 - 保留更多连接，增加网络覆盖"
+    },
+    "network_stats": null,
+    "edge_stats": null,
+    "performance": null,
+    "status": "failed: No module named 'torch'"
+  }
+}

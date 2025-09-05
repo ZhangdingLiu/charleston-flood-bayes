@@ -1,0 +1,8 @@
+{
+  "total_combinations_tested": 5760,
+  "best_f1_score": 0.9739130434782608,
+  "best_precision": 1.0,
+  "best_recall": 1.0,
+  "parameter_ranges": {
+    "occ_thr": {
+      "min": 

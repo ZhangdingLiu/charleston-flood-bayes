@@ -1,0 +1,1173 @@
+{
+  "evaluation_summary": {
+    "timestamp": "2025-07-07T19:14:44.740260",
+    "network_file": "charleston_flood_network.csv",
+    "data_file": "Road_Closures_2024.csv",
+    "train_samples": 646,
+    "test_samples": 277,
+    "evaluation_samples": 1229
+  },
+  "metrics": {
+    "accuracy": 0.9471114727420668,
+    "precision": 0.06382978723404255,
+    "recall": 0.125,
+    "f1_score": 0.08450704225352113,
+    "roc_auc": 0.6070712309820192,
+    "pr_auc": 0.0336413954355126,
+    "brier_score": 0.06008962065450303,
+    "positive_ratio": 0.01952807160292921,
+    "total_samples": 1229,
+    "true_positives": 3,
+    "true_negatives": 1161,
+    "false_positives": 44,
+    "false_negatives": 21
+  },
+  "network_info": {
+    "nodes": 18,
+    "edges": 14,
+    "network_nodes": [
+      "AMERICA_ST",
+      "ASHLEY_AVE",
+      "BARRE_ST",
+      "BEAUFAIN_ST",
+      "BENNETT_ST",
+      "BULL_ST",
+      "CALHOUN_ST",
+      "CHERRY_ST",
+      "FISHBURNE_ST",
+      "GADSDEN_ST",
+      "HAGOOD_AVE",
+      "N_MARKET_ST",
+      "OGIER_ST",
+      "PRESIDENT_ST",
+      "RUTLEDGE_AVE",
+      "SMITH_ST",
+      "S_MARKET_ST",
+      "WASHINGTON_ST"
+    ]
+  },
+  "evaluation_details": [
+    {
+      "date": "2015-10-02",
+      "target_road": "HAGOOD_AVE",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.3573231690291248,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "BENNETT_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "CHERRY_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "GADSDEN_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1037037037037037,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "CALHOUN_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.4513148179830128,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "RUTLEDGE_AVE",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.287594168419032,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "PRESIDENT_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.23647980921250003,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "BULL_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.09377587843402976,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "WASHINGTON_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.4485567660739855,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "BEAUFAIN_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "SMITH_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08148148148148149,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "BARRE_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1111111111111111,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "FISHBURNE_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.167514496761062,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "OGIER_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.404877225835026,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-02",
+      "target_road": "N_MARKET_ST",
+      "evidence": {
+        "S_MARKET_ST": 1,
+        "AMERICA_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.27653623857756526,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "HAGOOD_AVE",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.3448147333223099,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "BENNETT_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "CHERRY_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "GADSDEN_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1037037037037037,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "PRESIDENT_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.6319458873854977,
+      "pred_flood": 1
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "BULL_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.18034668573948384,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "WASHINGTON_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.3118618925590529,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "BEAUFAIN_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "SMITH_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08148148148148149,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "BARRE_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1111111111111111,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "S_MARKET_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.3113587126846324,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "FISHBURNE_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.19131578827089485,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "ASHLEY_AVE",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.6192592592592592,
+      "pred_flood": 1
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "OGIER_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "N_MARKET_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.21311038390736795,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-03",
+      "target_road": "AMERICA_ST",
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.16168041745213174,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "HAGOOD_AVE",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.32031657571887456,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "BENNETT_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "CHERRY_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "GADSDEN_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1037037037037037,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "CALHOUN_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.2003273852886402,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "RUTLEDGE_AVE",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.12732691170732469,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "PRESIDENT_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.12556190476190476,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "BULL_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "WASHINGTON_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.26831418858471995,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "SMITH_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08148148148148149,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "S_MARKET_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.23402498014583784,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "FISHBURNE_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.16209779333138913,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "ASHLEY_AVE",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.2770706596033023,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "OGIER_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "N_MARKET_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08888888888888889,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-05",
+      "target_road": "AMERICA_ST",
+      "evidence": {
+        "BARRE_ST": 1,
+        "BEAUFAIN_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08888888888888889,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "BENNETT_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "CHERRY_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "GADSDEN_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1037037037037037,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "CALHOUN_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.2814458743870509,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "RUTLEDGE_AVE",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.22277590485555088,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "PRESIDENT_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.42857142857142855,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "BULL_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "WASHINGTON_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 1,
+      "prob_flood": 0.5222222222222223,
+      "pred_flood": 1
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "BEAUFAIN_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "SMITH_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08148148148148149,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "BARRE_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1111111111111111,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "FISHBURNE_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.16209779333138913,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "ASHLEY_AVE",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.3017939897752782,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "OGIER_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.060092449922958396,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-10-28",
+      "target_road": "AMERICA_ST",
+      "evidence": {
+        "HAGOOD_AVE": 1,
+        "S_MARKET_ST": 1,
+        "N_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08888888888888889,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "HAGOOD_AVE",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.3334577839241746,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "BENNETT_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "CHERRY_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "GADSDEN_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1037037037037037,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "CALHOUN_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.27304596803445935,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "PRESIDENT_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.39719446812464904,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "BULL_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.20740013790894374,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "WASHINGTON_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.2868838387813254,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "BEAUFAIN_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "SMITH_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08148148148148149,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "BARRE_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1111111111111111,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "S_MARKET_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.2755080458128974,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "FISHBURNE_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1987537124565928,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "ASHLEY_AVE",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.6192592592592592,
+      "pred_flood": 1
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "OGIER_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "N_MARKET_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.15552330915984655,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-03",
+      "target_road": "AMERICA_ST",
+      "evidence": {
+        "RUTLEDGE_AVE": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08888888888888889,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "HAGOOD_AVE",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.5948640744351346,
+      "pred_flood": 1
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "GADSDEN_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1037037037037037,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "CALHOUN_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.21950865419178006,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "RUTLEDGE_AVE",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 1,
+      "prob_flood": 0.14989677000299595,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "PRESIDENT_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.19721150303476895,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "BULL_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "WASHINGTON_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 1,
+      "prob_flood": 0.32835325395685644,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "BEAUFAIN_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 1,
+      "prob_flood": 0.07407407407407407,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "SMITH_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.08148148148148149,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "BARRE_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1111111111111111,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "FISHBURNE_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.16209779333138913,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "ASHLEY_AVE",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 1,
+      "prob_flood": 0.332126457784241,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "OGIER_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.22015869294272988,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "N_MARKET_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 1,
+      "prob_flood": 0.3043301208090132,
+      "pred_flood": 0
+    },
+    {
+      "date": "2015-11-09",
+      "target_road": "AMERICA_ST",
+      "evidence": {
+        "BENNETT_ST": 1,
+        "CHERRY_ST": 1,
+        "S_MARKET_ST": 1
+      },
+      "true_flood": 1,
+      "prob_flood": 0.08888888888888889,
+      "pred_flood": 0
+    },
+    {
+      "date": "2016-01-15",
+      "target_road": "HAGOOD_AVE",
+      "evidence": {
+        "OGIER_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.32031657571887456,
+      "pred_flood": 0
+    },
+    {
+      "date": "2016-01-15",
+      "target_road": "BENNETT_ST",
+      "evidence": {
+        "OGIER_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2016-01-15",
+      "target_road": "CHERRY_ST",
+      "evidence": {
+        "OGIER_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.0962962962962963,
+      "pred_flood": 0
+    },
+    {
+      "date": "2016-01-15",
+      "target_road": "GADSDEN_ST",
+      "evidence": {
+        "OGIER_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.1037037037037037,
+      "pred_flood": 0
+    },
+    {
+      "date": "2016-01-15",
+      "target_road": "CALHOUN_ST",
+      "evidence": {
+        "OGIER_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.2003273852886402,
+      "pred_flood": 0
+    },
+    {
+      "date": "2016-01-15",
+      "target_road": "RUTLEDGE_AVE",
+      "evidence": {
+        "OGIER_ST": 1
+      },
+      "true_flood": 0,
+      "prob_flood": 0.12732691170732469,
+      "pred_flood": 0
+    }
+  ]
+}

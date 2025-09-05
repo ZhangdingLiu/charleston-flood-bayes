@@ -1,0 +1,77 @@
+{
+  "total_combinations_tested": 1,
+  "best_f1_score": 0.47368421052631576,
+  "best_precision": 0.782608695652174,
+  "best_recall": 0.33962264150943394,
+  "parameter_ranges": {
+    "occ_thr": {
+      "min": 3,
+      "max": 3,
+      "unique_values": [
+        3
+      ]
+    },
+    "edge_thr": {
+      "min": 2,
+      "max": 2,
+      "unique_values": [
+        2
+      ]
+    },
+    "weight_thr": {
+      "min": 0.3,
+      "max": 0.3,
+      "unique_values": [
+        0.3
+      ]
+    },
+    "evidence_count": {
+      "min": 2,
+      "max": 2,
+      "unique_values": [
+        2
+      ]
+    },
+    "pred_threshold": {
+      "min": 0.2,
+      "max": 0.2,
+      "unique_values": [
+        0.2
+      ]
+    },
+    "neg_pos_ratio": {
+      "min": 1.0,
+      "max": 1.0,
+      "unique_values": [
+        1.0
+      ]
+    },
+    "marginal_prob_threshold": {
+      "min": 0.05,
+      "max": 0.05,
+      "unique_values": [
+        0.05
+      ]
+    }
+  },
+  "performance_statistics": {
+    "f1_score": {
+      "mean": 0.47368421052631576,
+      "std": NaN,
+      "min": 0.47368421052631576,
+      "max": 0.47368421052631576
+    },
+    "precision": {
+      "mean": 0.782608695652174,
+      "std": NaN,
+      "min": 0.782608695652174,
+      "max": 0.782608695652174
+    },
+    "recall": {
+      "mean": 0.33962264150943394,
+      "std": NaN,
+      "min": 0.33962264150943394,
+      "max": 0.33962264150943394
+    }
+  }
+}

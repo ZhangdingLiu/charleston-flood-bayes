@@ -1,0 +1,2 @@
+occ_thr,edge_thr,weight_thr,evidence_count,pred_threshold,neg_pos_ratio,marginal_prob_threshold,tp,fp,tn,fn,total_samples,positive_samples,negative_samples,precision,recall,f1_score,accuracy,valid_days,total_days,network_nodes,negative_candidates_count,runtime_seconds
+3,2,0.3,2,0.2,1.0,0.05,18,5,46,35,104,53,51,0.782608695652174,0.33962264150943394,0.47368421052631576,0.6153846153846154,11,29,42,13,1.9245390892028809

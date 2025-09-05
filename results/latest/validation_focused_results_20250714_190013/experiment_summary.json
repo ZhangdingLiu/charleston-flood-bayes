@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-07-14T19:00:13.143859",
+  "methodology": "validation_focused_evaluation",
+  "data_split": "temporal_by_flood_days_6_2_2",
+  "evidence_strategy": "fixed_count",
+  "negative_sampling": "marginal_probability_0.05",
+  "best_parameters": {
+    "evidence_count": 3,
+    "pred_threshold": 0.1
+  },
+  "validation_performance": {
+    "f1_score": 0.8478260869565216,
+    "precision": 0.7959183673469388,
+    "recall": 0.9069767441860465,
+    "total_samples": 86
+  },
+  "final_test_performance": {
+    "f1_score": 0.8275862068965518,
+    "precision": 0.8,
+    "recall": 0.8571428571428571,
+    "total_samples": 83
+  }
+}

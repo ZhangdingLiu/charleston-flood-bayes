@@ -1,0 +1,859 @@
+{
+  "evaluation_summary": {
+    "timestamp": "2025-07-07T20:42:49.143131",
+    "model_file": "train_based_bn.pkl",
+    "selected_roads": [
+      "AIKEN ST",
+      "ASHLEY AVE",
+      "PITT ST",
+      "HARLESTON VILLAGE",
+      "CALHOUN ST",
+      "WASHINGTON ST"
+    ],
+    "network_edges": [
+      [
+        "PITT ST",
+        "ASHLEY AVE",
+        1.0
+      ],
+      [
+        "HARLESTON VILLAGE",
+        "WASHINGTON ST",
+        1.0
+      ],
+      [
+        "AIKEN ST",
+        "CALHOUN ST",
+        1.0
+      ]
+    ],
+    "test_samples": 192,
+    "positive_samples": 0,
+    "best_threshold": 0.5
+  },
+  "threshold_results": {
+    "0.2": {
+      "threshold": 0.2,
+      "accuracy": 0.625,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          120,
+          72
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "true_positives": 0,
+      "true_negatives": 120,
+      "false_positives": 72,
+      "false_negatives": 0,
+      "total_samples": 192,
+      "positive_samples": 0
+    },
+    "0.3": {
+      "threshold": 0.3,
+      "accuracy": 0.625,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          120,
+          72
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "true_positives": 0,
+      "true_negatives": 120,
+      "false_positives": 72,
+      "false_negatives": 0,
+      "total_samples": 192,
+      "positive_samples": 0
+    },
+    "0.4": {
+      "threshold": 0.4,
+      "accuracy": 0.7604166666666666,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          146,
+          46
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "true_positives": 0,
+      "true_negatives": 146,
+      "false_positives": 46,
+      "false_negatives": 0,
+      "total_samples": 192,
+      "positive_samples": 0
+    },
+    "0.5": {
+      "threshold": 0.5,
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          192
+        ]
+      ],
+      "true_positives": 0,
+      "true_negatives": 192,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "total_samples": 192,
+      "positive_samples": 0
+    },
+    "0.6": {
+      "threshold": 0.6,
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          192
+        ]
+      ],
+      "true_positives": 0,
+      "true_negatives": 192,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "total_samples": 192,
+      "positive_samples": 0
+    },
+    "0.7": {
+      "threshold": 0.7,
+      "accuracy": 1.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          192
+        ]
+      ],
+      "true_positives": 0,
+      "true_negatives": 192,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "total_samples": 192,
+      "positive_samples": 0
+    }
+  },
+  "best_performance": {
+    "threshold": 0.5,
+    "accuracy": 1.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "confusion_matrix": [
+      [
+        192
+      ]
+    ],
+    "true_positives": 0,
+    "true_negatives": 192,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "total_samples": 192,
+    "positive_samples": 0
+  },
+  "prediction_samples": [
+    {
+      "date": "2015-10-02",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2015-10-02",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2015-10-02",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2015-10-02",
+      "road": "CALHOUN ST",
+      "node_name": "CALHOUN_ST",
+      "prob_flood": 0.32770481550969355,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2015-10-02",
+      "road": "WASHINGTON ST",
+      "node_name": "WASHINGTON_ST",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2015-10-03",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.15505725190839695,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2015-10-03",
+      "road": "ASHLEY AVE",
+      "node_name": "ASHLEY_AVE",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2015-10-03",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2015-10-03",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2015-10-03",
+      "road": "WASHINGTON ST",
+      "node_name": "WASHINGTON_ST",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2015-10-28",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-10-28",
+      "road": "ASHLEY AVE",
+      "node_name": "ASHLEY_AVE",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-10-28",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-10-28",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-10-28",
+      "road": "CALHOUN ST",
+      "node_name": "CALHOUN_ST",
+      "prob_flood": 0.32770481550969355,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-11-09",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-11-09",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-11-09",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2015-11-09",
+      "road": "CALHOUN ST",
+      "node_name": "CALHOUN_ST",
+      "prob_flood": 0.32770481550969355,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2016-09-14",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2016-09-14",
+      "road": "ASHLEY AVE",
+      "node_name": "ASHLEY_AVE",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2016-09-14",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2016-09-14",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2016-09-14",
+      "road": "CALHOUN ST",
+      "node_name": "CALHOUN_ST",
+      "prob_flood": 0.32770481550969355,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2016-10-08",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.15505725190839695,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2016-10-08",
+      "road": "ASHLEY AVE",
+      "node_name": "ASHLEY_AVE",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2016-10-08",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2016-10-08",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2016-10-08",
+      "road": "WASHINGTON ST",
+      "node_name": "WASHINGTON_ST",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2017-05-23",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.15505725190839695,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-05-23",
+      "road": "ASHLEY AVE",
+      "node_name": "ASHLEY_AVE",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-05-23",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-05-23",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-06-06",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2017-06-06",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2017-06-06",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2017-06-06",
+      "road": "CALHOUN ST",
+      "node_name": "CALHOUN_ST",
+      "prob_flood": 0.32770481550969355,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2017-06-06",
+      "road": "WASHINGTON ST",
+      "node_name": "WASHINGTON_ST",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE"
+      ]
+    },
+    {
+      "date": "2017-06-21",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-06-21",
+      "road": "ASHLEY AVE",
+      "node_name": "ASHLEY_AVE",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-06-21",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-06-21",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-06-21",
+      "road": "CALHOUN ST",
+      "node_name": "CALHOUN_ST",
+      "prob_flood": 0.32770481550969355,
+      "true_flood": 0,
+      "evidence": {
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-09-11",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.15505725190839695,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-09-11",
+      "road": "ASHLEY AVE",
+      "node_name": "ASHLEY_AVE",
+      "prob_flood": 0.4601313320825516,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-09-11",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2017-09-11",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "WASHINGTON_ST": 1
+      },
+      "evidence_roads": [
+        "CALHOUN ST",
+        "WASHINGTON ST"
+      ]
+    },
+    {
+      "date": "2018-06-08",
+      "road": "AIKEN ST",
+      "node_name": "AIKEN_ST",
+      "prob_flood": 0.15505725190839695,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE",
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2018-06-08",
+      "road": "PITT ST",
+      "node_name": "PITT_ST",
+      "prob_flood": 0.11043153244988109,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE",
+        "CALHOUN ST"
+      ]
+    },
+    {
+      "date": "2018-06-08",
+      "road": "HARLESTON VILLAGE",
+      "node_name": "HARLESTON_VILLAGE",
+      "prob_flood": 0.06097560975609756,
+      "true_flood": 0,
+      "evidence": {
+        "CALHOUN_ST": 1,
+        "ASHLEY_AVE": 1
+      },
+      "evidence_roads": [
+        "ASHLEY AVE",
+        "CALHOUN ST"
+      ]
+    }
+  ]
+}

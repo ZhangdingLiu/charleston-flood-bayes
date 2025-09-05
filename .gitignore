@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Results and temporary files
+*.pkl
+*.log
+*.tmp
+
+# Archive directory (optional - 如果你不想上传归档文件)
+archive/old_results/
+archive/debug_sessions/
+
+# Large result files (optional)
+results/historical/
+results/current/csv_outputs/
+
+# Environment
+.env
+.conda/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db

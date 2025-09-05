@@ -1,0 +1,5 @@
+strategy,count,avg_precision,avg_recall,avg_f1,max_precision,max_recall,max_f1,best_config_precision,best_config_f1
+MarginalProbability,360,0.6874617384335924,0.4565246845342249,0.47755272360444123,1.0,1.0,0.859504132231405,{'prob_threshold': 0.05},{'prob_threshold': 0.05}
+FloodFrequency,120,0.7267858819871004,0.4963908555558016,0.5143531898772162,1.0,1.0,0.8888888888888888,{'max_flood_count': 3},{'max_flood_count': 3}
+RecentActivity,360,0.6653897372997489,0.4565246845342249,0.47162165902998493,1.0,1.0,0.8666666666666667,{'max_recent_floods': 1},{'max_recent_floods': 0}
+CombinedConservative,120,0.7260481539777341,0.4963908555558016,0.5143815666734445,1.0,1.0,0.8888888888888888,"{'prob_threshold': 0.15, 'max_flood_count': 3, 'max_recent_floods': 2}","{'prob_threshold': 0.15, 'max_flood_count': 3, 'max_recent_floods': 2}"

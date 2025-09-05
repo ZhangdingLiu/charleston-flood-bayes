@@ -1,0 +1,30 @@
+{
+  "timestamp": "20250721_140625",
+  "param_grid": {
+    "occ_thr": [
+      3
+    ],
+    "edge_thr": [
+      2
+    ],
+    "weight_thr": [
+      0.3,
+      0.4
+    ],
+    "evidence_count": [
+      2,
+      3
+    ],
+    "pred_threshold": [
+      0.2
+    ],
+    "neg_pos_ratio": [
+      1.0
+    ],
+    "marginal_prob_threshold": [
+      0.05
+    ]
+  },
+  "use_validation_split": true,
+  "random_seed": 42
+}

@@ -1,0 +1,79 @@
+
+PILOT CONSERVATIVE EVALUATION - DEPLOYMENT RECOMMENDATIONS
+Generated: 2025-07-11 16:04:27
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+Total configurations evaluated: 960
+Best overall F1-Score: 0.889
+Best precision: 1.000
+Best recall: 1.000
+
+PILOT FINDINGS
+================================================================================
+NETWORK CONFIGURATION PERFORMANCE:
+• Baseline: Avg F1=0.449, Max F1=0.889
+• Conservative: Avg F1=0.523, Max F1=0.833
+• Restrictive: Avg F1=0.467, Max F1=0.867
+
+
+NEGATIVE SAMPLE RATIO ANALYSIS:
+• Best ratio for F1-Score: 1:1.0 (avg F1: 0.509)
+• Best ratio for Precision: 1:1.0 (avg precision: 0.752)
+
+STRATEGY EFFECTIVENESS:
+• CombinedConservative: Avg F1=0.514, Max F1=0.889
+• FloodFrequency: Avg F1=0.514, Max F1=0.889
+• MarginalProbability: Avg F1=0.478, Max F1=0.860
+• RecentActivity: Avg F1=0.472, Max F1=0.867
+
+
+TOP 3 PILOT RECOMMENDATIONS
+================================================================================
+
+PILOT RECOMMENDATION #1:
+• Strategy: FloodFrequency {'max_flood_count': 3}
+• Network: Baseline
+• Negative ratio: 1:1.0
+• Prediction threshold: 0.1
+• Evidence ratio: 0.5
+• Performance: Precision=0.874, Recall=0.905, F1=0.889
+• Sample size: 134 (84 pos, 50 neg)
+
+
+PILOT RECOMMENDATION #2:
+• Strategy: CombinedConservative {'prob_threshold': 0.15, 'max_flood_count': 3, 'max_recent_floods': 2}
+• Network: Baseline
+• Negative ratio: 1:1.0
+• Prediction threshold: 0.1
+• Evidence ratio: 0.5
+• Performance: Precision=0.874, Recall=0.905, F1=0.889
+• Sample size: 134 (84 pos, 50 neg)
+
+
+PILOT RECOMMENDATION #3:
+• Strategy: FloodFrequency {'max_flood_count': 3}
+• Network: Baseline
+• Negative ratio: 1:2.0
+• Prediction threshold: 0.1
+• Evidence ratio: 0.5
+• Performance: Precision=0.864, Recall=0.905, F1=0.884
+• Sample size: 142 (84 pos, 58 neg)
+
+
+NEXT STEPS FOR FULL EVALUATION
+================================================================================
+Based on pilot results, consider refining parameter ranges for comprehensive evaluation:
+1. Focus on most promising network configurations
+2. Narrow down strategy parameter ranges based on pilot performance
+3. Test additional negative sample ratios around best-performing values
+4. Expand prediction threshold range around optimal values
+
+DEPLOYMENT GUIDELINES
+================================================================================
+1. Conservative negative sampling shows promise for addressing observation bias
+2. Monitor precision vs recall trade-offs based on operational requirements
+3. Consider computational resources when selecting network configuration
+4. Validate performance stability across different time periods
+
