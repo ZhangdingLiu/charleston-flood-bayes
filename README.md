@@ -1,7 +1,3 @@
-# CLAUDE.md
-
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
-
 ## Overview
 
 This is a Bayesian Network analysis project for Charleston flood prediction using road closure data. The project analyzes patterns in historical flood events to build predictive networks for flood-prone road segments.
