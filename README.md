@@ -245,12 +245,4 @@ python experiments/parameter_tuning/evaluate_top_configs_on_test_set.py  # Test 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📮 Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/your-username/charleston-flood-prediction](https://github.com/your-username/charleston-flood-prediction)
-
----
-
 ⭐ **Star this repository if you find it helpful!**
