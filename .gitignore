@@ -14,6 +14,9 @@ build/
 *.swp
 *.swo
 
+# Claude Code
+CLAUDE.md
+
 # Results and temporary files
 *.pkl
 *.log
