@@ -35,6 +35,10 @@ This is a Bayesian Network analysis project for Charleston flood prediction usin
 │   └── data_processing/            # 数据处理 (预留)
 ├── experiments/                    # 实验和专项分析
 │   ├── 2025_validation/            # 2025年新数据验证 ⭐
+│   │   ├── 2025 0822 reliable bayes test _ for final defence/ ⭐ # 答辩实验 (Sept 2025)
+│   │   │   ├── pure_python_prediction.py          # 纯Python实时预测脚本
+│   │   │   └── realtime_window_*.json             # 16个JSON结果文件 (2次运行)
+│   │   └── [其他验证脚本]          # 其他2025数据验证
 │   ├── parameter_tuning/           # 测试集评估实验
 │   │   ├── evaluate_top_configs_on_test_set.py ⭐  # 最佳配置测试
 │   │   └── [其他测试集评估]        # 灵活参数、指定参数测试
@@ -88,8 +92,9 @@ python src/evaluation/latest/validation_focused_evaluation.py
 - **可视化分析**: 3D散点图、热图、敏感性分析、Pareto前沿
 
 ### 🔬 **Comprehensive Evaluation**
-- **测试集评估**: 独立测试集验证最佳配置性能  
+- **测试集评估**: 独立测试集验证最佳配置性能
 - **2025数据验证**: 最新洪水数据的模型验证
+- **答辩实验 (Sept 2025)**: 纯Python实时累积预测系统 (无pandas依赖)
 - **特定事件分析**: 历史重大洪水事件案例研究
 
 ## Development Commands
@@ -146,6 +151,10 @@ python src/evaluation/test_validation_script.py                # 验证脚本测
 
 # 2025年数据验证
 python experiments/2025_validation/validate_2025_flood_data_fixed.py
+
+# 答辩实验 - 实时累积预测 (Sept 2025) ⭐
+cd "experiments/2025_validation/2025 0822 reliable bayes test _ for final defence"
+python pure_python_prediction.py                # 纯Python实时预测 (生成16个JSON结果)
 ```
 
 ## Core Architecture
@@ -313,9 +322,107 @@ python experiments/parameter_tuning/evaluate_focused_flexible_params.py
 
 **约束条件筛选:**
 - Precision ≥ 0.8 (高精度要求)
-- Recall ≥ 0.8 (高召回要求) 
+- Recall ≥ 0.8 (高召回要求)
 - F1 Score ≥ 0.7 (平衡性能)
 - Test Samples ≥ 30 (统计可靠性)
+
+## Defence Experiment (Sept 2025) 🎓
+
+### 📍 **实验位置**
+`experiments/2025_validation/2025 0822 reliable bayes test _ for final defence/`
+
+### 🎯 **实验目的**
+为2025年9月12日答辩准备的实时累积洪水预测演示系统
+
+### ⭐ **核心特性**
+- **纯Python实现**: 无pandas依赖，简化部署
+- **实时累积预测**: 每个时间窗口累积之前所有证据进行推理
+- **10分钟时间窗口**: 模拟实时洪水监测场景
+- **可靠贝叶斯网络**: 27节点网络 (occ_thr=5, edge_thr=3, weight_thr=0.4)
+- **2025年真实数据**: 测试最新洪水事件数据
+
+### 📁 **文件结构**
+```
+2025 0822 reliable bayes test _ for final defence/
+├── pure_python_prediction.py              # 主脚本 (340行)
+└── realtime_window_*.json                 # 16个JSON结果文件
+    ├── realtime_window_01_*_204233.json   # 第1次运行 (9个窗口)
+    └── realtime_window_01_*_204753.json   # 第2次运行 (9个窗口)
+```
+
+### 🚀 **使用方法**
+```bash
+# 进入答辩实验目录
+cd "experiments/2025_validation/2025 0822 reliable bayes test _ for final defence"
+
+# 运行实时预测脚本
+python pure_python_prediction.py
+
+# 输出: 9个JSON文件 (对应9个10分钟时间窗口)
+# - Window 1: 12:19-12:29 PM
+# - Window 2: 12:29-12:39 PM
+# ...
+# - Window 9: 13:39-13:49 PM
+```
+
+### 📊 **JSON结果文件结构**
+每个JSON文件包含:
+```json
+{
+  "experiment_metadata": {
+    "experiment_name": "Real-Time Cumulative Flood Prediction (Pure Python)",
+    "timestamp": "2025-09-06 20:42:33",
+    "description": "Using 27-node reliable network...",
+    "random_seed": 42
+  },
+  "training_data_info": {
+    "total_records": 923,
+    "unique_streets": 27,
+    "data_source": "Road_Closures_2024.csv"
+  },
+  "bayesian_network": {
+    "parameters": {"occ_thr": 5, "edge_thr": 3, "weight_thr": 0.4},
+    "statistics": {"total_nodes": 27, "total_edges": 89},
+    "all_nodes": ["AMERICA_ST", "ASHLEY_AVE", ...]
+  },
+  "current_window": {
+    "window_id": 1,
+    "window_label": "12:19-12:29",
+    "evidence": {
+      "cumulative_evidence_roads": [...],  # 累积证据道路
+      "network_evidence_count": 5
+    },
+    "predictions": [
+      {"road": "AMERICA_ST", "probability": 0.65, "is_evidence": false},
+      ...
+    ],
+    "summary_stats": {
+      "average_prediction_probability": 0.423,
+      "high_risk_roads_count": 12
+    }
+  }
+}
+```
+
+### 🔑 **关键技术点**
+1. **累积证据机制**: 每个窗口保留之前所有观测到的淹水道路作为证据
+2. **贝叶斯推理**: 基于累积证据计算未观测道路的淹水概率
+3. **无依赖设计**: 仅使用Python标准库 (json, csv, datetime, collections)
+4. **简化网络**: 使用SimpleBayesianNetwork类替代pgmpy，降低复杂度
+
+### 📈 **实验数据**
+- **训练数据**: Road_Closures_2024.csv (923条记录, 2015-2024)
+- **测试数据**: archive/old_results/2025_flood_processed.csv
+- **网络规模**: 27个关键道路节点, 89条边
+- **时间跨度**: 约1.5小时 (12:19 PM - 13:49 PM)
+- **运行次数**: 2次 (验证结果一致性)
+
+### 💡 **答辩展示要点**
+1. ✅ 展示纯Python实现的简洁性和可部署性
+2. ✅ 强调实时累积预测的实用价值
+3. ✅ 说明10分钟时间窗口适合实时监测
+4. ✅ 展示JSON结果的结构化和可读性
+5. ✅ 验证多次运行结果的一致性 (随机种子=42)
 
 ## Development Tips
 
@@ -331,16 +438,21 @@ python experiments/parameter_tuning/evaluate_focused_flexible_params.py
 ## Summary
 
 这是一个**清洁、轻便**的Charleston洪水预测贝叶斯网络项目:
-- ✅ **单一源码目录** (`src/`) - 避免重复和混乱  
+- ✅ **单一源码目录** (`src/`) - 避免重复和混乱
 - ✅ **Git友好** - 实体文件而非符号链接
-- ✅ **功能完整** - 参数优化、评估验证、2025数据测试
+- ✅ **功能完整** - 参数优化、评估验证、2025数据测试、答辩实验
 - ✅ **文档齐全** - 清晰的使用指南和最佳实践
 - ✅ **可复现** - 严格的时间分割和随机种子控制
+- ✅ **答辩就绪** - 纯Python实时预测演示系统 (Sept 2025)
 
 **核心命令速查**:
 ```bash
 python src/models/main.py                                         # 基础网络
-python src/analysis/run_parameter_optimization.py                # 参数优化  
+python src/analysis/run_parameter_optimization.py                # 参数优化
 python src/evaluation/latest/validation_focused_evaluation.py    # 主评估
 python experiments/parameter_tuning/evaluate_top_configs_on_test_set.py  # 测试集评估
+
+# 答辩实验 (Sept 2025)
+cd "experiments/2025_validation/2025 0822 reliable bayes test _ for final defence"
+python pure_python_prediction.py                                 # 实时预测演示
 ```

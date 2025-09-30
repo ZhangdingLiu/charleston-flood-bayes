@@ -54,6 +54,10 @@ This project implements a sophisticated Bayesian Network model to predict flood 
 │   └── data_processing/            # Data processing (reserved)
 ├── experiments/                    # Experiments and specialized analysis
 │   ├── 2025_validation/            # 2025 new data validation ⭐
+│   │   ├── 2025 0822 reliable bayes test _ for final defence/ ⭐ # Defence experiment (Sept 2025)
+│   │   │   ├── pure_python_prediction.py          # Pure Python real-time prediction script
+│   │   │   └── realtime_window_*.json             # 16 JSON result files (2 runs)
+│   │   └── [other_validation_scripts] # Other 2025 data validation
 │   ├── parameter_tuning/           # Test set evaluation experiments
 │   │   ├── evaluate_top_configs_on_test_set.py ⭐  # Best configuration testing
 │   │   └── [other_test_evaluations] # Flexible parameters, specified parameter testing
@@ -114,8 +118,9 @@ python src/evaluation/latest/validation_focused_evaluation.py
 - **Visualization Analysis**: 3D scatter plots, heatmaps, sensitivity analysis, Pareto frontier
 
 ### 🔬 **Comprehensive Evaluation**
-- **Test Set Evaluation**: Independent test set validation for best configuration performance  
+- **Test Set Evaluation**: Independent test set validation for best configuration performance
 - **2025 Data Validation**: Model validation with latest flood data
+- **Defence Experiment (Sept 2025)**: Pure Python real-time cumulative prediction system (no pandas dependency)
 - **Specific Event Analysis**: Case studies of historical major flood events
 
 ## 📊 Usage
@@ -178,8 +183,71 @@ python src/visualization/parameter_analysis_visualizer.py
 
 ### 2025 Data Validation
 ```bash
+# Standard 2025 data validation
 python experiments/2025_validation/validate_2025_flood_data_fixed.py
+
+# Defence experiment - Real-time cumulative prediction (Sept 2025) ⭐
+cd "experiments/2025_validation/2025 0822 reliable bayes test _ for final defence"
+python pure_python_prediction.py
 ```
+
+## 🎓 Defence Experiment (September 2025)
+
+### Overview
+A **pure Python real-time cumulative flood prediction system** developed for the September 12, 2025 thesis defence. This experiment demonstrates practical real-time flood monitoring capabilities without external dependencies.
+
+### Key Features
+- ✅ **Pure Python Implementation**: No pandas dependency, simplified deployment
+- ✅ **Real-Time Cumulative Prediction**: Each time window accumulates all previous evidence for inference
+- ✅ **10-Minute Time Windows**: Simulates real-time flood monitoring scenarios
+- ✅ **Reliable Bayesian Network**: 27-node network (occ_thr=5, edge_thr=3, weight_thr=0.4)
+- ✅ **2025 Real Data**: Tests on latest flood event data
+
+### Location
+```
+experiments/2025_validation/2025 0822 reliable bayes test _ for final defence/
+├── pure_python_prediction.py              # Main script (340 lines)
+└── realtime_window_*.json                 # 16 JSON result files
+    ├── realtime_window_01_*_204233.json   # Run 1 (9 windows)
+    └── realtime_window_01_*_204753.json   # Run 2 (9 windows)
+```
+
+### Quick Start
+```bash
+# Navigate to defence experiment directory
+cd "experiments/2025_validation/2025 0822 reliable bayes test _ for final defence"
+
+# Run real-time prediction script
+python pure_python_prediction.py
+
+# Output: 9 JSON files (corresponding to 9 10-minute time windows)
+# Window 1: 12:19-12:29 PM
+# Window 2: 12:29-12:39 PM
+# ...
+# Window 9: 13:39-13:49 PM
+```
+
+### Result Structure
+Each JSON file contains:
+- **Experiment Metadata**: Name, timestamp, description, random seed
+- **Training Data Info**: 923 records, 27 unique streets
+- **Bayesian Network**: Parameters, 27 nodes, 89 edges
+- **Current Window**: Window ID, time range, cumulative evidence
+- **Predictions**: Flood probabilities for all roads
+- **Summary Stats**: Average probability, high-risk road count
+
+### Technical Highlights
+1. **Cumulative Evidence Mechanism**: Each window retains all previously observed flooded roads as evidence
+2. **Bayesian Inference**: Calculates flood probabilities for unobserved roads based on cumulative evidence
+3. **No Dependencies**: Uses only Python standard library (json, csv, datetime, collections)
+4. **Simplified Network**: Uses SimpleBayesianNetwork class instead of pgmpy, reducing complexity
+
+### Experiment Data
+- **Training Data**: Road_Closures_2024.csv (923 records, 2015-2024)
+- **Test Data**: archive/old_results/2025_flood_processed.csv
+- **Network Scale**: 27 key road nodes, 89 edges
+- **Time Span**: Approximately 1.5 hours (12:19 PM - 13:49 PM)
+- **Runs**: 2 times (validates result consistency with random_seed=42)
 
 ## 📈 Model Parameters
 
@@ -219,18 +287,23 @@ python experiments/2025_validation/validate_2025_flood_data_fixed.py
 ## 🎯 Summary
 
 This is a **clean, lightweight** Charleston flood prediction Bayesian network project:
-- ✅ **Single Source Directory** (`src/`) - Avoids duplication and confusion  
+- ✅ **Single Source Directory** (`src/`) - Avoids duplication and confusion
 - ✅ **Git-Friendly** - Real files instead of symbolic links
-- ✅ **Feature Complete** - Parameter optimization, evaluation validation, 2025 data testing
+- ✅ **Feature Complete** - Parameter optimization, evaluation validation, 2025 data testing, defence experiment
 - ✅ **Well Documented** - Clear usage guides and best practices
 - ✅ **Reproducible** - Strict temporal splitting and random seed control
+- ✅ **Defence Ready** - Pure Python real-time prediction demo system (Sept 2025)
 
 **Core Command Quick Reference:**
 ```bash
 python src/models/main.py                                         # Basic network
-python src/analysis/run_parameter_optimization.py                # Parameter optimization  
+python src/analysis/run_parameter_optimization.py                # Parameter optimization
 python src/evaluation/latest/validation_focused_evaluation.py    # Main evaluation
 python experiments/parameter_tuning/evaluate_top_configs_on_test_set.py  # Test set evaluation
+
+# Defence Experiment (Sept 2025)
+cd "experiments/2025_validation/2025 0822 reliable bayes test _ for final defence"
+python pure_python_prediction.py                                 # Real-time prediction demo
 ```
 
 ## 🤝 Contributing
