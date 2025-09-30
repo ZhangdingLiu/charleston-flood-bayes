@@ -1,0 +1,25 @@
+# Bayesian Flood Prediction Integration Package - Dependencies
+# 
+# This package is designed to be lightweight with minimal dependencies.
+# All dependencies are from Python standard library or very common packages.
+
+# No external ML libraries required! The Bayesian network is implemented from scratch.
+# 
+# Core dependencies (all standard library):
+# - json (built-in)
+# - os (built-in) 
+# - sys (built-in)
+# - random (built-in)
+# - csv (built-in)
+# - datetime (built-in)
+# - collections (built-in)
+
+# Optional dependencies for web integration:
+flask>=2.0.0       # For Flask API integration examples
+fastapi>=0.68.0     # For FastAPI integration examples  
+uvicorn>=0.15.0     # ASGI server for FastAPI
+
+# Development dependencies (optional):
+pytest>=6.0.0       # For running tests
+black>=22.0.0       # Code formatting
+flake8>=4.0.0       # Code linting

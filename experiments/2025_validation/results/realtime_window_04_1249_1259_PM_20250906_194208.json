@@ -1,0 +1,76 @@
+{
+  "experiment_metadata": {
+    "experiment_name": "Real-Time Cumulative Flood Prediction (Pure Python)",
+    "timestamp": "2025-09-06 19:42:08",
+    "description": "Using 0-node reliable network, testing 10-minute windows on 2025 data",
+    "random_seed": 42
+  },
+  "training_data_info": {
+    "total_records": 0,
+    "unique_streets": 0,
+    "data_source": "Road_Closures_2024.csv"
+  },
+  "test_data_info": {
+    "data_source": "archive/old_results/2025_flood_processed.csv"
+  },
+  "bayesian_network": {
+    "parameters": {
+      "occ_thr": 10,
+      "edge_thr": 3,
+      "weight_thr": 0.4
+    },
+    "statistics": {
+      "total_nodes": 0,
+      "total_edges": 0
+    },
+    "all_nodes": []
+  },
+  "current_window": {
+    "window_id": 4,
+    "window_label": "12:49-12:59",
+    "time_range": {
+      "window_start": "2025-08-22T12:49:00",
+      "window_end": "2025-08-22T12:59:00"
+    },
+    "evidence": {
+      "cumulative_evidence_roads": [
+        "ASHLEY_AVE",
+        "BARRE_ST",
+        "BEAUFAIN_ST",
+        "BENNETT_ST",
+        "BROAD_ST",
+        "E_BAY_ST",
+        "FISHBURNE_ST",
+        "GADSDEN_ST",
+        "GORDON_ST",
+        "HAGOOD_AVE",
+        "HUGER_ST",
+        "KING_ST",
+        "LOCKWOOD_DR",
+        "MARKET_ST",
+        "MEETING_ST",
+        "N_MARKET_ST",
+        "OGIER_ST",
+        "RUTLEDGE_AVE",
+        "SOCIETY_ST",
+        "WASHINGTON_ST",
+        "WENTWORTH_ST"
+      ],
+      "network_evidence_roads": [],
+      "evidence_count": 21,
+      "network_evidence_count": 0
+    },
+    "predictions": [],
+    "summary_stats": {
+      "average_prediction_probability": 0,
+      "high_risk_roads_count": 0,
+      "total_non_evidence_roads": 0
+    }
+  },
+  "window_summary": {
+    "window_number": 4,
+    "total_windows": 8,
+    "window_label": "12:49-12:59",
+    "completion_status": "success"
+  }
+}

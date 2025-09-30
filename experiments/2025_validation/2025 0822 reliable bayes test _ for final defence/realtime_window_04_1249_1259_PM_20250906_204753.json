@@ -1,0 +1,314 @@
+{
+  "experiment_metadata": {
+    "experiment_name": "Real-Time Cumulative Flood Prediction (Pure Python)",
+    "timestamp": "2025-09-06 20:47:53",
+    "description": "Using 37-node reliable network, testing 10-minute windows on 2025 data",
+    "random_seed": 42
+  },
+  "training_data_info": {
+    "total_records": 923,
+    "unique_streets": 37,
+    "data_source": "Road_Closures_2024.csv"
+  },
+  "test_data_info": {
+    "data_source": "archive/old_results/2025_flood_processed.csv"
+  },
+  "bayesian_network": {
+    "parameters": {
+      "occ_thr": 5,
+      "edge_thr": 3,
+      "weight_thr": 0.4
+    },
+    "statistics": {
+      "total_nodes": 37,
+      "total_edges": 171
+    },
+    "all_nodes": [
+      "AMERICA_ST",
+      "ASHLEY_AVE",
+      "ASHLEY_RIVER_BRIDGE",
+      "BARRE_ST",
+      "BEAUFAIN_ST",
+      "BEE_ST",
+      "BENNETT_ST",
+      "BOGARD_ST",
+      "BULL_ST",
+      "CALHOUN_ST",
+      "CANNON_PARK",
+      "CANNON_ST",
+      "CHERRY_ST",
+      "COMING_ST",
+      "CONCORD_ST",
+      "DRAKE_ST",
+      "E_BAY_ST",
+      "FISHBURNE_ST",
+      "GADSDEN_ST",
+      "HAGOOD_AVE",
+      "HANOVER_ST",
+      "HASELL_ST",
+      "LINE_ST",
+      "LOCKWOOD_DR",
+      "LOCKWOOD_DR_RAMP",
+      "MORRIS_ST",
+      "N_MARKET_ST",
+      "OGIER_ST",
+      "PRESIDENT_ST",
+      "RUTLEDGE_AVE",
+      "SEPTIMA_P_CLARK_PKWY",
+      "SHEPPARD_ST",
+      "SMITH_ST",
+      "SPRING_ST",
+      "S_MARKET_ST",
+      "VANDERHORST_ST",
+      "WASHINGTON_ST"
+    ]
+  },
+  "current_window": {
+    "window_id": 4,
+    "window_label": "12:49-12:59",
+    "time_range": {
+      "window_start": "2025-08-22T12:49:00",
+      "window_end": "2025-08-22T12:59:00"
+    },
+    "evidence": {
+      "cumulative_evidence_roads": [
+        "ASHLEY_AVE",
+        "BARRE_ST",
+        "BEAUFAIN_ST",
+        "BENNETT_ST",
+        "BROAD_ST",
+        "E_BAY_ST",
+        "FISHBURNE_ST",
+        "GADSDEN_ST",
+        "GORDON_ST",
+        "HAGOOD_AVE",
+        "HUGER_ST",
+        "KING_ST",
+        "LOCKWOOD_DR",
+        "MARKET_ST",
+        "MEETING_ST",
+        "N_MARKET_ST",
+        "OGIER_ST",
+        "RUTLEDGE_AVE",
+        "SOCIETY_ST",
+        "WASHINGTON_ST",
+        "WENTWORTH_ST"
+      ],
+      "network_evidence_roads": [
+        "ASHLEY_AVE",
+        "BARRE_ST",
+        "BEAUFAIN_ST",
+        "BENNETT_ST",
+        "E_BAY_ST",
+        "FISHBURNE_ST",
+        "GADSDEN_ST",
+        "HAGOOD_AVE",
+        "LOCKWOOD_DR",
+        "N_MARKET_ST",
+        "OGIER_ST",
+        "RUTLEDGE_AVE",
+        "WASHINGTON_ST"
+      ],
+      "evidence_count": 21,
+      "network_evidence_count": 13
+    },
+    "predictions": [
+      {
+        "road": "AMERICA_ST",
+        "probability": 0.11,
+        "is_evidence": false
+      },
+      {
+        "road": "ASHLEY_AVE",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "ASHLEY_RIVER_BRIDGE",
+        "probability": 0.025,
+        "is_evidence": false
+      },
+      {
+        "road": "BARRE_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "BEAUFAIN_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "BEE_ST",
+        "probability": 0.04,
+        "is_evidence": false
+      },
+      {
+        "road": "BENNETT_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "BOGARD_ST",
+        "probability": 0.035,
+        "is_evidence": false
+      },
+      {
+        "road": "BULL_ST",
+        "probability": 0.08,
+        "is_evidence": false
+      },
+      {
+        "road": "CALHOUN_ST",
+        "probability": 0.4937474747474748,
+        "is_evidence": false
+      },
+      {
+        "road": "CANNON_PARK",
+        "probability": 0.05,
+        "is_evidence": false
+      },
+      {
+        "road": "CANNON_ST",
+        "probability": 0.055,
+        "is_evidence": false
+      },
+      {
+        "road": "CHERRY_ST",
+        "probability": 0.085,
+        "is_evidence": false
+      },
+      {
+        "road": "COMING_ST",
+        "probability": 0.045,
+        "is_evidence": false
+      },
+      {
+        "road": "CONCORD_ST",
+        "probability": 0.035,
+        "is_evidence": false
+      },
+      {
+        "road": "DRAKE_ST",
+        "probability": 0.05,
+        "is_evidence": false
+      },
+      {
+        "road": "E_BAY_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "FISHBURNE_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "GADSDEN_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "HAGOOD_AVE",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "HANOVER_ST",
+        "probability": 0.035,
+        "is_evidence": false
+      },
+      {
+        "road": "HASELL_ST",
+        "probability": 0.035,
+        "is_evidence": false
+      },
+      {
+        "road": "LINE_ST",
+        "probability": 0.03,
+        "is_evidence": false
+      },
+      {
+        "road": "LOCKWOOD_DR",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "LOCKWOOD_DR_RAMP",
+        "probability": 0.075,
+        "is_evidence": false
+      },
+      {
+        "road": "MORRIS_ST",
+        "probability": 0.04,
+        "is_evidence": false
+      },
+      {
+        "road": "N_MARKET_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "OGIER_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "PRESIDENT_ST",
+        "probability": 0.135,
+        "is_evidence": false
+      },
+      {
+        "road": "RUTLEDGE_AVE",
+        "probability": 1.0,
+        "is_evidence": true
+      },
+      {
+        "road": "SEPTIMA_P_CLARK_PKWY",
+        "probability": 0.095,
+        "is_evidence": false
+      },
+      {
+        "road": "SHEPPARD_ST",
+        "probability": 0.055,
+        "is_evidence": false
+      },
+      {
+        "road": "SMITH_ST",
+        "probability": 0.075,
+        "is_evidence": false
+      },
+      {
+        "road": "SPRING_ST",
+        "probability": 0.055,
+        "is_evidence": false
+      },
+      {
+        "road": "S_MARKET_ST",
+        "probability": 0.5906818181818181,
+        "is_evidence": false
+      },
+      {
+        "road": "VANDERHORST_ST",
+        "probability": 0.3451818181818182,
+        "is_evidence": false
+      },
+      {
+        "road": "WASHINGTON_ST",
+        "probability": 1.0,
+        "is_evidence": true
+      }
+    ],
+    "summary_stats": {
+      "average_prediction_probability": 0.111,
+      "high_risk_roads_count": 1,
+      "total_non_evidence_roads": 24
+    }
+  },
+  "window_summary": {
+    "window_number": 4,
+    "total_windows": 8,
+    "window_label": "12:49-12:59",
+    "completion_status": "success"
+  }
+}
